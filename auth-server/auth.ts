@@ -1,5 +1,6 @@
 // sets up openauth server
 // as per docs: https://openauth.js.org/docs
+// TODO: deploy this on docker container, sst or railway
 import { issuer } from "@openauthjs/openauth"
 import { MemoryStorage } from "@openauthjs/openauth/storage/memory"
 import { PasswordProvider } from "@openauthjs/openauth/provider/password"
@@ -21,6 +22,7 @@ async function getUser(email: string) {
 
 export default issuer({
   subjects,
+  // TODO: change to persistent storage
   storage: MemoryStorage({
     persist: "./persist.json",
   }),
