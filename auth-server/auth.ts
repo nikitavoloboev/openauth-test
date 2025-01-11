@@ -1,6 +1,6 @@
 // sets up openauth server
 // as per docs: https://openauth.js.org/docs
-// TODO: deploy this on docker container, sst or railway
+// TODO: deploy this on docker container of sst
 import { issuer } from "@openauthjs/openauth"
 import { GoogleProvider } from "@openauthjs/openauth/provider/google"
 import { MemoryStorage } from "@openauthjs/openauth/storage/memory"
