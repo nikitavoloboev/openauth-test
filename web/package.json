@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "ronin:migrate": "bunx ronin diff --apply",
+    "s": "bun --watch scripts/run.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.63.0",
@@ -18,6 +20,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "redaxios": "^0.5.1",
+    "ronin": "^6.0.8",
     "tailwind-merge": "^2.6.0",
     "vinxi": "0.5.1"
   },
